@@ -1,6 +1,6 @@
 
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
 <!DOCTYPE html>
@@ -9,19 +9,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name='robots' content='max-image-preview:large' />
-<script type="e65c8380d5593569680fc012-text/javascript">
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            'pageTitle': 'About Us',
-            'internalUser': 'no',
-        });
+<script type="e65c8380d5593569680fc012-text/javascript" src="{% static 'page/JS/about.js' %}">
+      
     </script>
 
-<script type="e65c8380d5593569680fc012-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PMZP6D');</script>
+<script type="e65c8380d5593569680fc012-text/javascript" src="{% static 'page/JS/about.js' %}" ></script>
 
 
 <title>About Us | Leaders in Fitness Education | AFA</title>
@@ -63,6 +55,7 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+
 </style>
 <link rel="stylesheet" href="data:text/css;charset=utf-8;base64,LypibGFuayov" data-href="https://www.fitnesseducation.edu.au/wp-content/cache/wnw-cache/all-css/0875d16c7596d0ce4278679bd5f53b4e.css" />
 
@@ -101,8 +94,9 @@ img.emoji {
 <noscript><iframe src="about:blank" height="0" width="0" style="display:none;visibility:hidden" data-src="https://www.googletagmanager.com/ns.html?id=GTM-PMZP6D" data-class="LazyLoad" ></iframe></noscript>
 
 
- <div class="banner " style="background-image:url(https://www.fitnesseducation.edu.au/wp-content/uploads/2021/02/Website-Header.png);">
-<div class="banner__inner container">
+<img class="card-img-top" height= "350", width="100%" src="{% static 'page/images/fit5.jpeg'%}" alt="home" />
+
+
 
 </div>
 </div>

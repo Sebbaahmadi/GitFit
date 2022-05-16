@@ -1,5 +1,6 @@
 
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -44,7 +45,12 @@
           font-size: 3.5rem;
         }
       }
+h3{
 
+  background-color: #ffffff;
+  color: black;
+
+}
       .b-example-divider {
         height: 3rem;
         background-color: rgba(0, 0, 0, .1);
@@ -58,6 +64,13 @@
         width: 1.5rem;
         height: 100vh;
       }
+      #bg{
+  background: url("/static/page/images/fit2.jpeg") 50% 0 no-repeat fixed;
+     color: white;
+     height: 650px;
+     width: 100%;
+     padding: 100px 0 0 0;   
+     }
 
       .bi {
         vertical-align: -.125em;
@@ -84,8 +97,10 @@
       .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #357bc5;
+  background-color: #ffffff;
   color: white;
+
+  
 }
     </style>
 
@@ -99,15 +114,21 @@
     <link rel="stylesheet" href="https://www.fitnesseducation.edu.au/wp-content/critical-css/www.fitnesseducation.edu.au/about-us/1a7f17a711f329da599de8c2d8ac05b0.css" /><link rel="canonical" href="https://www.fitnesseducation.edu.au/about-us/" />
 </head>
 <body>
+  
+<div class="about-section" >
+ <img class="card-img-top" height= "350", width="100%" src="{% static 'page/images/fit2.jpeg'%}" alt="home" />
 
-<div class="about-section">
+
+  
+
+
  
-  <p style="font-family: Lucida Console, Courier New, monospace;" >Taking control of your daily life is easy when you know how!</p>
+  <h3 style="font-family: Lucida Console, Courier New, monospace;" >Taking control of your daily life <br>  easy when you know how!</h3>
   
 </div>
 <br>
-<p style="font-family: Lucida Console, Courier New, monospace; text-align: center;">
-    Recent posts</p>
+<h3 style="font-family: Lucida Console, Courier New, monospace; text-align: center;">
+    Recent posts</h3>
 <br>
 <br>
 <br>

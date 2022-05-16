@@ -1,5 +1,6 @@
 
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -16,11 +17,7 @@
 <link rel="stylesheet" href="https://www.fitnesseducation.edu.au/wp-content/critical-css/www.fitnesseducation.edu.au/about-us/1a7f17a711f329da599de8c2d8ac05b0.css" /><link rel="canonical" href="https://www.fitnesseducation.edu.au/about-us/" />
 </head>
 
- <div class="banner " style="background-image:url(https://www.fitnesseducation.edu.au/wp-content/uploads/2021/05/Home-Header-Imager.webp);">
-<div class="banner__inner container">
 
-</div>
-</div>
 <div class="breadcrumbs"><div class="wrap"><div class="breadcrumbs__inner"><span class="breadcrumb-link-wrap"><a class="breadcrumb-link" href="{% url 'about' %}"><span class="breadcrumb-link-text-wrap">About Us </span></a>
   <meta></span><span class="breadcrumbs__sep">/</span>Home</div></div></div> <div class="page-heading">
 <div class="wrap">
@@ -40,6 +37,9 @@
   <div class="moving__row" style="text-align: center;">
     <div class="flex-split flex-split--moving moving__slider">
         <div class="flex-split__item">
+          <img class="card-img-top" height= "350", width="100%" src="{% static 'page/images/fit1.jpeg'%}" alt="home" />
+          <br>
+          <br>
             <div><img src="https://ik.imagekit.io/02fmeo4exvw/assets/home-alt/moving-icon-1.png" alt=""></div>
             <br>
             <div>
